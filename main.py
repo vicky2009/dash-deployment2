@@ -1,37 +1,12 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-'''
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-'''
-
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import html, dash_table, dcc
 import weasyprint
 from io import BytesIO
-import base64
-
-# import dash
-# import dash_core_components as dcc
-# import dash_html_components as html
 import plotly.express as px
 import pandas as pd
 from dash.dependencies import Input, Output, State
 import base64
-import plotly.graph_objects as go
-import dash_table
 
-from plotly.io import to_image
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -97,5 +72,3 @@ def generate_pdf(n_clicks, table_data):
 
 if __name__ == '__main__':
     app.run_server(debug=False, port=8062)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
